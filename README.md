@@ -1,24 +1,30 @@
-# 10 Academy - Week 0: Solar Data Discovery
+# solar-challenge-week0
 
-This project analyzes solar radiation data from **Benin**, **Sierra Leone**, and **Togo** to identify the best country for solar farm investment. It was developed as part of the **10 Academy AI Mastery Week 0 Challenge**.
+This repository contains the work for the 10 Academy "Solar Challenge — Week 0" training (KAIM).
 
----
+Contents
+- `notebooks/` — exploratory notebooks for countries (Benin, Togo, Sierra Leone) and comparison notebooks.
+- `data/` — (expected) place for CSV datasets used by the notebooks (sierraleone.csv, benin.csv, togo.csv).
+- `src/` — supporting code and scripts.
+- `requirements.txt` — pinned Python dependencies used for the environment.
 
-## ⚙️ Setup Instructions
+Quick start (Windows, PowerShell)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/<your-username>/solar-challenge-week0.git
-   cd solar-challenge-week0
-2. **Create and activate virtual environment**
-   ```bash
-    python -m venv venv
-    .\venv\Scripts\Activate   # Windows
-    # or
-    source venv/bin/activate  # Mac/Linux
-3. **Install dependencies**
-    ```bash
-    pip install -r requirements.txt
-4. **Run Jupyter Notebook**
-    ```bash
-    jupyter notebook
+1. Create a virtual environment (if not already created):
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+2. Upgrade packaging tools and install dependencies:
+
+```powershell
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install -r requirements.txt
+```
+
+Running the notebooks
+
+- Open VS Code or Jupyter after activating the virtual environment. In VS Code use the Python interpreter inside `venv\Scripts\python.exe` (the workspace `.vscode/settings.json` already points to it).
+- Launch the notebook UI (e.g., `jupyter lab` or open the `.ipynb` files in VS Code) and run cells from the top.
